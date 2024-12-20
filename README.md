@@ -4,7 +4,6 @@ This project is designed to generate responses to questions based on a given con
 
 ## Project Structure
 ```bash
-__pycache__/
 .env
 prompts.py
 response_with_reference_sentences.py

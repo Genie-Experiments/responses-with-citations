@@ -4,9 +4,7 @@ This project is designed to generate responses to questions based on a given con
 
 ### Best Practice
 1) While generating the final response by giving the context and the question to the llm, as it to return a list of sentences from the context that it uses to asnwer the question. This is the most effective and easy-to-implement way of generating very accurate references and citations. (LLM(context,question) ------> asnwer,reference_sentences)
-2) Another approach is to first prompt the LLM to generate a list of facts from a response. Then prompt a second time by passing it the list of facts and the context used to generate the response and ask it find relevant sentences from the context that represent each fact on the list. Overall this approach is relatively less effective but is useful when you have a long and verbose response with a limited context window as it first summarizes the long response into a list of facts and then searches for them in the context.
-<br/>
-( LLM(answer) ---> Facts , LLM(Facts,context) ----> reference_sentences)
+2) Another approach is to first prompt the LLM to generate a list of facts from a response. Then prompt a second time by passing it the list of facts and the context used to generate the response and ask it find relevant sentences from the context that represent each fact on the list. Overall this approach is relatively less effective but is useful when you have a long and verbose response with a limited context window as it first summarizes the long response into a list of facts and then searches for them in the context.<br/>( LLM(answer) ---> Facts , LLM(Facts,context) ----> reference_sentences)
 
 ## Project Structure
 ```bash

@@ -19,7 +19,7 @@ utils.py
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/yourusername/Agentic-RAG.git](https://github.com/Genie-Experiments/responses-with-citations.git)
+   git clone https://github.com/Genie-Experiments/responses-with-citations.git
 
 2. Create and activate a virtual environment:
   ```bash
